@@ -88,6 +88,57 @@ margin-right:480px;padding:auto;">
     </div>
     </nav>
 </footer>
+<script>
+
+// FOLLOW BUTTON FUNCTION
+let followBtn = document.querySelector("button");
+
+followBtn.onclick = function(){
+    if(followBtn.innerText == "follow"){
+        followBtn.innerText = "following";
+        followBtn.style.backgroundColor = "green";
+    }
+    else{
+        followBtn.innerText = "follow";
+        followBtn.style.backgroundColor = "blue";
+    }
+}
+
+
+
+// LIKE HEART FUNCTION
+let heart = document.querySelector(".icons span:last-child");
+
+heart.onclick = function(){
+    if(heart.style.color == "red"){
+        heart.style.color = "white";
+    }
+    else{
+        heart.style.color = "red";
+    }
+}
+
+
+
+// STORY CLICK MESSAGE
+let story = document.querySelector("img");
+
+story.onclick = function(){
+    alert("Opening your story...");
+}
+
+
+
+// VIDEO PLAY MESSAGE
+let videos = document.querySelectorAll("video");
+
+videos.forEach(function(v){
+    v.onclick = function(){
+        console.log("Reel is playing...");
+    }
+})
+
+</script>
     
     </body>
 
