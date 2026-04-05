@@ -1,0 +1,15 @@
+body{
+
+font-family: Arial;
+text-align: center;
+
+}
+
+#box{
+
+width:200px;
+height:200px;
+background:red;
+margin:auto;
+
+}
